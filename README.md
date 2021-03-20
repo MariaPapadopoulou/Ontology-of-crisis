@@ -1,0 +1,2 @@
+# Ontology-of-crisis
+Ontology of crisis in antiquity. This is an ontology of crises at the time of Xenophon (431 BC - 359 BC) featuring terms in ancient Greek with equivalents in modern Greek and English. In order to solve the problem of linking and aligning these three vocabularies as well as defining their meaning, we will rely on the conceptualization of crises, modeled by means of a shared and common ontology built in a computer readable form compliant with the W3C standards.
