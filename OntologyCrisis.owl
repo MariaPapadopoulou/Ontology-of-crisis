@@ -1,0 +1,729 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#"
+     xml:base="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:untitled-ontology-31="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/untitled-ontology-31#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis">
+        <rdfs:seeAlso>http://remacle.org/bloodwolf/historiens/xenophon/histoire2.htm</rdfs:seeAlso>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#altLabel -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#altLabel"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#exactMatch -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/birthday -->
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/birthday"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/depiction -->
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/depiction"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/name -->
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/name"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#agent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#agent">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Event"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Agent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#cause -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#cause">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Event"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Event"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#consequence -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#consequence">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Event"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Event"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#designates -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#designates">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Term"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Agent"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Event"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Location"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#location -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#location">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Event"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Location"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#period -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#period">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Event"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#predecessor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#predecessor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Event"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Event"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#subEvent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#subEvent">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Event"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Event"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#successor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#successor">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Event"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Event"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#beginDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#beginDate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#real"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#endDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#endDate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#real"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#pleiadesCoordinates -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#pleiadesCoordinates">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Location"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Agent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Agent">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Event"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Location"/>
+        <skos:exactMatch>foaf:Agent</skos:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Battle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Battle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Military_Crisis"/>
+        <skos:prefLabel xml:lang="en">battle</skos:prefLabel>
+        <skos:prefLabel xml:lang="el">μάχη</skos:prefLabel>
+        <skos:prefLabel xml:lang="grc">μάχη</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Crisis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Crisis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Event"/>
+        <skos:prefLabel xml:lang="en">crisis</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Demonstration -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Demonstration">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Political_Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Drought -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Drought">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Environmental_Crisis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Earthquake -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Earthquake">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Environmental_Crisis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Election -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Election">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Political_Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Environmental_Crisis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Environmental_Crisis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Crisis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Epidemic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Epidemic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Public_Health_Crisis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Event -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Event">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#agent"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Agent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#cause"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Event"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#consequence"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Event"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#predecessor"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Event"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#subEvent"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Event"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#successor"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Event"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#location"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Location"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#beginDate"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#endDate"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Location"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Famine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Famine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Humanitarian_Crisis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Festivals -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Festivals">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Financial_Crisis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Financial_Crisis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Crisis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Group -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Group">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Humanitarian_Crisis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Humanitarian_Crisis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Crisis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Inundation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Inundation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Environmental_Crisis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Invasion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Invasion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Military_Crisis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Land_Battle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Land_Battle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Battle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Location -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Location"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Military_Crisis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Military_Crisis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Crisis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Monetary_Crisis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Monetary_Crisis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Financial_Crisis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Naval_Battle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Naval_Battle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Battle"/>
+        <skos:prefLabel xml:lang="en">naval battle</skos:prefLabel>
+        <skos:prefLabel xml:lang="el">ναυμαχία</skos:prefLabel>
+        <skos:prefLabel xml:lang="grc">ναυμαχία</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Ostracism -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Ostracism">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Political_Crisis"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Political_Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Pandemic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Pandemic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Public_Health_Crisis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Person">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Pillage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Pillage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Military_Crisis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Political_Crisis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Political_Crisis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Crisis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Political_Event -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Political_Event">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Public_Health_Crisis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Public_Health_Crisis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Humanitarian_Crisis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Religious_Festival -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Religious_Festival">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Festivals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Riot -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Riot">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Demonstration"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Social_Crisis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Social_Crisis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Social_Crisis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Crisis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Sport_Festival -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Sport_Festival">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Festivals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Term -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Term"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#War -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#War">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Military_Crisis"/>
+        <skos:prefLabel xml:lang="en">war</skos:prefLabel>
+        <skos:prefLabel xml:lang="el">πόλεμος</skos:prefLabel>
+        <skos:prefLabel xml:lang="grc">πόλεμος</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Aegospotami -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Aegospotami">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Aegospotami_battle -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Aegospotami_battle">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Battle"/>
+        <agent rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Lysander"/>
+        <location rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Aegospotami"/>
+        <beginDate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-405</beginDate>
+        <endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-405</endDate>
+        <rdfs:seeAlso>https://en.wikipedia.org/wiki/Aegospotami</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Alcibiades -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Alcibiades">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Person"/>
+        <rdfs:comment xml:lang="en">Alcibiades disembarked his army at Gaurium, in the territory of Andros; and when the men of Andros and the Laconians who were there came forth to meet him, the Athenians routed them, shut them up in their city, and killed some few of them.
+http://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0206%3Abook%3D1%3Achapter%3D4</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Andrians -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Andrians">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Group"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Andros_battle -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Andros_battle">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Battle"/>
+        <agent rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Alcibiades"/>
+        <agent rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Laconians"/>
+        <location rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Gavrion"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Arginoussai_battle -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Arginoussai_battle">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Naval_Battle"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Arginusae -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Arginusae">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Location"/>
+        <pleiadesCoordinates>https://en.wikipedia.org/wiki/Battle_of_Arginusae</pleiadesCoordinates>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Athenians -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Athenians">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Group"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Gavrion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Gavrion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Laconians -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Laconians">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Group"/>
+        <skos:altLabel xml:lang="en">Laconians</skos:altLabel>
+        <skos:altLabel xml:lang="en">Spartans</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Lacedaemonians</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Lysander -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Lysander">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Person"/>
+        <rdfs:seeAlso>https://en.wikipedia.org/wiki/Lysander</rdfs:seeAlso>
+        <foaf:depiction>https://upload.wikimedia.org/wikipedia/commons/a/a6/Lysander-Sparta.jpg</foaf:depiction>
+        <foaf:name xml:lang="en">Lysander</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Peloponnese_war -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Peloponnese_war">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#War"/>
+        <agent rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Alcibiades"/>
+        <agent rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Andrians"/>
+        <agent rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Athenians"/>
+        <agent rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Laconians"/>
+        <agent rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Lysander"/>
+        <location rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Peloponnesus"/>
+        <subEvent rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Aegospotami_battle"/>
+        <subEvent rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Andros_battle"/>
+        <subEvent rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Arginoussai_battle"/>
+        <beginDate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-431</beginDate>
+        <endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-404</endDate>
+        <rdfs:comment xml:lang="en">[2] But the Argives, Athenians, Boeotians, and1 those among the Corinthians who had received a share of the money from the King, as well as those who had made themselves chiefly responsible for the war, realizing that if they did not put out of the way the people who had turned toward peace, the state would be in danger of going over to the Lacedaemonians again, undertook, under these circumstances, to bring about a general massacre. And in the first place, they devised the most sacrilegious of all schemes; for other people, even if a man is condemned by process of law, do not put him to death during a religious festival; but these men chose the last day of the Euclea,2 because they thought they would catch more people in the market-place, so as to kill them.
+http://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0206%3Abook%3D4%3Achapter%3D4%3Asection%3D2</rdfs:comment>
+        <rdfs:comment xml:lang="grc">[4.4.2] Τότε οι Αργείοι, οι Αθηναίοι κι οι Βοιωτοί, καθώς κι όσοι Κορίνθιοι είχαν πληρωθεί από τα χρήματα του Βασιλέως κι όσοι είχαν σταθεί πρωταίτιοι του πολέμου, καταλάβαιναν ότι, αν δεν εξουδετέρωναν την ειρηνόφιλη μερίδα, υπήρχε κίνδυνος να προσχωρήσει η πόλη ξανά στους Λακεδαιμονίους· γι᾽ αυτό οργάνωσαν σφαγή.
+https://www.greek-language.gr/digitalResources/ancient_greek/library/browse.html?text_id=32&amp;page=41&amp;hi=311782</rdfs:comment>
+        <rdfs:seeAlso>http://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0032.tlg001.perseus-grc1:4.4.2</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Peloponnesus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Peloponnesus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Location"/>
+        <pleiadesCoordinates>https://pleiades.stoa.org/places/570577</pleiadesCoordinates>
+        <rdfs:seeAlso>https://pleiades.stoa.org/places/570577</rdfs:seeAlso>
+        <skos:altLabel xml:lang="en">Peloponnesos</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Peloponnesus</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Péloponnèse</skos:prefLabel>
+        <skos:prefLabel xml:lang="el">Πελοπόννησος</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#tyrant -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#tyrant">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mpapadopoulou/ontologies/2021/2/ontology-of-crisis#Term"/>
+        <rdfs:label xml:lang="en">tyrant</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
